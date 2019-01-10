@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffe68d13</color>
+    <color name="colorPrimaryLite">#ffb044</color>
+    <color name="colorPrimaryDark">#cc7e14</color>
+    <color name="colorAccent">#ffe68d13</color>
+    <color name="rounded_shadow_color">#77e68d13</color>
+    <color name="rounded_shadow_lite_color">#55fabe6c</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#ffc4c4c4</color>
+    <color name="gray_lite">#88c4c4c4</color>
+    <color name="black">#000</color>
+</resources>

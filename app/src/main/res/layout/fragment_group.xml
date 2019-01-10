@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".Fragments.GroupFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/HeaderText"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/large_app_text_size"
+        android:textColor="@color/colorPrimary"
+        android:text="Group"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NormalText"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:text="Customize and Edit your group"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:id="@+id/create_new_group"
+        android:text="Create New Group"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        style="@style/HeaderText"
+        android:textAllCaps="false"
+        android:layout_margin="5dp"
+        android:background="@drawable/rounded_button_yellow"
+        android:textSize="18sp"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/group_list_item"
+        android:id="@+id/group_device_list">
+
+    </ListView>
+
+</LinearLayout>

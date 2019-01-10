@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_margin="2dp"
+android:padding="5dp"
+android:layout_height="100dp">
+
+<ImageButton
+    android:layout_width="70dp"
+    android:id="@+id/review_1"
+    android:layout_margin="5dp"
+    android:layout_alignParentStart="true"
+    android:background="@drawable/white_circle_border"
+    android:layout_height="70dp"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:ellipsize="end"
+    android:singleLine="true"
+    android:textSize="@dimen/medium_app_text_size"
+    style="@style/NormalText"
+    android:layout_marginStart="10dp"
+    android:layout_toEndOf="@+id/review_1"
+    android:layout_toStartOf="@+id/review_2"
+    android:text="Kitchen Light GP 1"
+    />
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:layout_alignParentBottom="true"
+     android:layout_toEndOf="@+id/review_1"
+     android:layout_marginBottom="2dp"
+     android:weightSum="2">
+
+
+<Button
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="40dp"
+    android:textColor="@color/white"
+    android:id="@+id/remove_from_group"
+    android:text="Remove"
+    style="@style/HeaderText"
+    android:layout_margin="5dp"
+    android:background="@drawable/rounded_button_yellow"
+    android:textSize="18sp"
+    />
+ </LinearLayout>
+
+</RelativeLayout>

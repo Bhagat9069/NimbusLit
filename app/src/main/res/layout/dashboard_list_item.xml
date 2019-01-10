@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_margin="5dp"
+android:id="@+id/friends_request_layout"
+android:layout_height="80dp">
+
+<ImageButton
+    android:layout_width="70dp"
+    android:id="@+id/review_1"
+    android:layout_margin="5dp"
+    android:layout_alignParentStart="true"
+    android:background="@drawable/white_circle_border"
+    android:layout_height="70dp"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:ellipsize="end"
+    android:singleLine="true"
+    android:textSize="@dimen/medium_app_text_size"
+    style="@style/NormalText"
+    android:layout_marginStart="10dp"
+    android:layout_toEndOf="@+id/review_1"
+    android:layout_toStartOf="@+id/review_2"
+    android:text="Kitchen Light GP 1"
+    />
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:gravity="center_vertical"
+     android:layout_alignParentBottom="true"
+     android:layout_toEndOf="@+id/review_1"
+     android:layout_marginBottom="2dp"
+     android:weightSum="2">
+
+
+<Button
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="40dp"
+    android:textColor="@color/white"
+    android:id="@+id/button_accept_request"
+    android:text="Customize"
+    android:elevation="5dp"
+    style="@style/HeaderText"
+    android:layout_margin="5dp"
+    android:padding="2dp"
+    android:background="@drawable/rounded_button_yellow"
+    android:textSize="@dimen/app_text_size"
+    />
+<!--
+<Switch
+    android:layout_width="0dp"
+    android:layout_height="30dp"
+    android:layout_weight="1"
+    android:textOn="On"
+    android:textOff="Off"
+    android:showText="true"
+    android:switchMinWidth="130dp"
+    android:textColor="@color/white"
+    android:thumb="@drawable/switch_thumb_back"
+    android:track="@drawable/switch_track_back"
+    android:id="@+id/button_blocked"
+    />
+-->
+
+     <com.nightonke.jellytogglebutton.JellyToggleButton
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:layout_marginStart="5dp"
+         android:layout_marginEnd="5dp"
+         app:jtbLeftText="Off"
+         app:jtbLeftTextSize="@dimen/medium_app_text_size"
+         app:jtbRightText="On"
+         app:jtbTextMarginLeft="10dp"
+         app:jtbTextMarginRight="10dp"
+         app:jtbDuration="1000"
+         app:jtbJelly="active_tremble_body_slim_jim"
+         app:jtbLeftBackgroundColor="@color/gray"
+         app:jtbRightBackgroundColor="@color/colorPrimary"
+         app:jtbLeftThumbColor="@color/colorPrimary"
+         app:jtbRightThumbColor="@android:color/white"
+         app:jtbLeftTextColor="@android:color/white"
+         app:jtbRightTextColor="@color/colorPrimary"
+         />
+ </LinearLayout>
+
+</RelativeLayout>
